@@ -51,21 +51,23 @@
           <div class="row">
             <div class="col-md-1">
             </div>
-            <div class="col-sm-3 shadow-lg p-3 mb-5 bg-white rounded text-center">
-              <img src="images/patient-1.png">            
+            <div class="col-sm-2 shadow-lg p-3 mb-5 bg-white rounded text-center">
+              <img src="images/patient-1.png" style="width: 60px; height: 60px;">            
               <p>IN PATIENT SERVICES</p>
             </div>
-            <div class="col-md-1">
+            <div class="col-md-2">
             </div>
-            <div class="col-sm-3 shadow-lg p-3 mb-5 bg-white rounded text-center">
-              <img src="images/patient-2.png">
+            <div class="col-sm-2 shadow-lg p-3 mb-5 bg-white rounded text-center">
+              <img src="images/patient-2.png" style="width: 60px; height: 60px;">
               <p>OUT PATIENT SERVICES</p>
             </div>
-            <div class="col-md-1">
+            <div class="col-md-2">
             </div>
-            <div class="col-sm-3 shadow-lg p-3 mb-5 bg-white rounded text-center">
-              <img src="images/patient-3.png">
+            <div class="col-sm-2 shadow-lg p-3 mb-5 bg-white rounded text-center">
+              <img src="images/patient-3.png" style="width: 60px; height: 60px;">
               <p>ACCIDENT & EMERGENCY SERVICES</p>
+            </div>
+            <div class="col-md-1">
             </div>
           </div>
         </div>
