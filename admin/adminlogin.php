@@ -46,7 +46,7 @@
             include("../include/header.php");
         ?>
 
-        <div class="container" style="margin-top: 50px;">
+        <div class="container" style="margin-top: 40px;">
             <div class="row">
                 <div class="col-md-3"></div>
                 <div class="col-md-6 jumbotron">
