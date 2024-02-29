@@ -49,34 +49,42 @@
 <body>
     <!-- navbar start -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-info bg-info">
-        <h5 class="text-white ml-3">ELDER HEARTHCARE</h5>
+    <div class="container">
+        <div class="row w-100">
+            <div class="col">
+                <h5 class="text-white ml-3">ELDER HEARTHCARE</h5>
+            </div>
+            <div class="col-auto">
+                <ul class="navbar-nav">
 
-        <div class="mr-auto"></div>
+                    <?php
 
-        <ul class="navbar-nav">
+                        if(isset($_SESSION['admin'])){
+                            $user = $_SESSION['admin'];
+                            echo'
+                            <li class="nav-item"><a href="#" class="nav-link text-white">'.$user.'</a></li>
+                            <li class="nav-item"><a href="logout.php" class="nav-link text-white">Logout</a></li>';
+                        }
+                    else{
+                        echo'
+                    <li class="nav-item"><a href="admin/adminlogin.php" class="nav-link text-white">Admin</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Doctor</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Patient</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Family member</a></li>
+                    ';
+                    }
+                    ?>
+                </ul>
+            </div>
+            <div class="col-auto">
+                <a href="#">
+                    <button class="btn btn-success border-start border-dark mr-3 bg-dark text-white">Sign Up</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
 
-            <?php
-
-                if(isset($_SESSION['admin'])){
-                    $user = $_SESSION['admin'];
-                    echo'
-                    <li class="nav-item"><a href="#" class="nav-link text-white">'.$user.'</a></li>
-                    <li class="nav-item"><a href="logout.php" class="nav-link text-white">Logout</a></li>';
-                }
-            else{
-                echo'
-            <li class="nav-item"><a href="admin/adminlogin.php" class="nav-link text-white">Admin</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-white">Doctor</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-white">Patient</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-white">Family member</a></li>
-            ';
-            }
-            ?>
-        </ul>
-        <a href="#">
-            <button class="border-start border-dark mr-3 ml-5 bg-dark text-white">Sign Up</button>
-        </a>
-    </nav>
     <!-- navbar end -->
 
     

@@ -154,7 +154,7 @@ h1, h2, h3, h4, h5,
   @media screen and (max-width: 768px) {
     .ftco-cover .btn {
       width: 100% !important;
-      border: 1px solid red; } }
+      /* border: 1px solid red; } } */
   .ftco-cover a {
     position: relative;
     color: #fff; }
